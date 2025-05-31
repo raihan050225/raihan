@@ -1,0 +1,6 @@
+import calendar
+year=10000
+print(calendar.calendar(year))
+print(calendar.month(2025,4))
+
+print(calendar.isleap(2024))
