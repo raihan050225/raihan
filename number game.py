@@ -80,13 +80,19 @@ for i in range(3):
         s2=s2+1
         
 print("game has been completed")
+time.sleep(2)
 print(" the results are")
 print("{} predicted {} ".format(name1,player1))
 print("{} predicted {} ".format(name2,player2))
+time.sleep(2)
 print("{} score is {} ".format(name2,s2))
+print("{} score is {} ".format(name1,s1))
+time.sleep(2)
 
 if(s1>s2):
     print("{} is the winner".format(name1))
+elif(s1==s2):
+    print("score is equal draw")
 else:
     print("{} is the winner".format(name2))
 
