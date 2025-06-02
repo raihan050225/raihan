@@ -1,0 +1,20 @@
+import sys
+import time
+h=11
+m=59
+s=57
+while True:
+    sys.stdout.write(f"\r {h:02d}:{m:02d}:{s:02d}")
+    sys.stdout.flush()
+    time.sleep(1)
+    s=s+1
+    if(s==60):
+        s=0
+        m=m+1
+    elif(m==60):
+        m=0
+        h=0
+    elif(h==12):
+        
+        
+        h=1
