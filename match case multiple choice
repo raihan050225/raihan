@@ -1,0 +1,46 @@
+import time
+
+def circle():
+    r=int(input("enter the radius:"))
+    print(3.14*r*r)
+    
+def rect(a,b):
+    print(a*b)
+
+def sqr():    
+    s=int(input("enter the sides:"))
+    return s*s
+
+def triangle(a,b):    
+    return(0.5*a*b)
+
+
+while(True):
+    print("ENTER             YOUR             CHOICE")
+    print("1.CIRCLE")
+    print("2.rectamgle")
+    print("3.square")
+    print("4.TRIANGLE")
+    print("5.EXIT")
+    
+    time.sleep(1)
+    
+    ch=int(input("enter ur choice:"))
+    
+    match ch:
+        case 1:
+              circle()
+        case 2:
+              l=int(input("enter the length:"))
+              b=int(input("enter the breadth"))
+              rect(a,b)
+        case 3:
+              res=sqr()
+              print(res)
+        case 4:
+              b=int(input("enter the breadth"))
+              h=int(input("enter the height"))
+              res1=triangle(b,h)
+              print("area of tri",res1)
+        case 5:
+              break
