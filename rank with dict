@@ -1,0 +1,24 @@
+def per(l):
+    totalmarks=sum(l["marks"])
+    return(totalmarks/4)
+    
+a=[
+    {"name":"ram","marks":[90,80,80,60]},
+    {"name":"fam","marks":[80,50,60,70]},
+    {"name":"jam","marks":[90,90,90,85]
+    }] 
+    
+b=sorted(a,key=per,reverse=True)
+
+po=1
+for i in b:
+    if po==1:
+        des="FIRST"
+    elif po==2 :
+        des="SECOND"
+    else:
+        des="THIRD"
+
+    percentage=per(i)
+    print("{} with percent {:.2f}% stands {}".format(i["name"],percentage,des))
+    po=po+1
