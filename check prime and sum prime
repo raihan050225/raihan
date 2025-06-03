@@ -1,0 +1,30 @@
+l = int(input("enter a number: "))
+n = str(l)
+
+def checkprimesum():
+    global n
+    sum=0
+    for i in n:
+        sum=sum+int(i)
+    c = 0
+    for j in range(2, sum):
+        if sum%j==0:
+            c = c+1
+    if (c==0):
+        print("sum of digits is prime")
+    else:
+        print("Sum of digits is not prime")
+
+def checknum():
+    global l
+    c=0
+    for i in range(2, l):
+        if(l%i==0):
+            c=c+1
+    if (c == 0 ):
+        print("Number is prime")
+    else:
+        print("Number is not prime")
+
+checknum()
+checkprimesum()
