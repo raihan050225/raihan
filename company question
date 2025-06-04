@@ -1,0 +1,15 @@
+def cal(ht, up, down):
+    h = ht
+    d = down
+    u = up
+    cl = 0
+    for i in range(1, h):
+        if (i%2!=0):
+            cl = cl + u
+        else:
+            cl = cl - d
+        if cl >= h: 
+            break
+    print("Minutes:", i)
+
+cal(30, 10, 5)
