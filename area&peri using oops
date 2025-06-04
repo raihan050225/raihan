@@ -1,1 +1,29 @@
+class rectangle:
+    def set_dim(self,w,h):
+        self.h=h
+        self.w=w
+    
+    def area(self):
+        print("area is:",self.w*self.h)
+    
+    def peri(self):
+        print("perimeter is:",2*(self.h+self.w))
+        
+import time
+l=[]
+n=int(input("enter the number of rectangle:"))
+for i in range(n):
+    r=rectangle()
+    w=int(input("enter the width of rectangle {}".format(i+1)))
+    h=int(input("enter the height of rectangle {}".format(i+1)))
+    r.set_dim(w,h)
+    l.append(r)
 
+for i in range(n):
+    time.sleep(1)
+    print("RECTANGLE {}:".format(i+1))
+    l[i].area()
+    l[i].peri()
+    print("------------------------------")
+    
+    
