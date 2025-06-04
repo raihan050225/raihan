@@ -1,0 +1,38 @@
+class employees:
+    company="cognizant"
+    def set_dim(self,salary,share,comprev,percentage,name,age):
+        self.s=share
+        self.p=percentage
+        self.h=share
+        self.c=comprev
+        self.n=name
+        self.a=age
+    def tax_cal(self):
+         print("tax:",self.s*self.p/10)
+    def sh_cal(self):
+        print("share:",self.c*self.h/10)
+    def pr_name(self):
+        print("name:",self.n)
+    def pr_age(self):
+        print("age:",self.a)
+        
+
+emp1=employees()
+print("COGNIZANT")
+emp1.set_dim(50000,120,100000,20,"ravi",28)
+emp1.pr_name()
+emp1.pr_age()
+emp1.tax_cal()
+emp1.sh_cal()
+
+emp2=employees()
+print("COGNIZANT")
+emp2.set_dim(70000,8,100000,15,"ram",28)
+emp2.pr_name()
+emp2.pr_age()
+emp2.tax_cal()
+emp2.sh_cal()
+
+
+        
+         
