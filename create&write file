@@ -1,0 +1,5 @@
+file=open("VIJAY.txt","w")
+file.write("vijay is going final year\n")
+file.write("he is a good kid")
+file.close()
+print("content written to VIJAY.txt successfully")
