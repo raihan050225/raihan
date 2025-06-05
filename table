@@ -1,0 +1,10 @@
+from tabulate import tabulate
+
+headers = ["name", "age", "department"]
+data = [
+    ["ravi", 25, "HR"],
+    ["anjali", 23, "IT"],
+    ["ram", 25, "finance"]
+]
+
+print(tabulate(data, headers=headers, tablefmt="fancy_grid"))
