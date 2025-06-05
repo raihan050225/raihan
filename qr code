@@ -1,0 +1,7 @@
+import qrcode
+text="RONALDO IS THE GOAT"
+r=qrcode.qrcode()
+r.add_data(text)
+r.make(fit=True)
+img.make_image(fill_color="black",back_color="white")
+img.save("ronaldo.png")
