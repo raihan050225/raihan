@@ -5,3 +5,16 @@ r.add_data(text)
 r.make(fit=True)
 img.make_image(fill_color="black",back_color="white")
 img.save("ronaldo.png")
+
+import qrcode
+def readtext(file,path):
+    with open( file_path,"r")as file
+      text=file.read()
+    return text
+file_path="msg.txt"    
+text=readtext(file_path)
+r=qrcode.QRCode()
+r.add_data(text)
+r.make(fit=True)
+img=qr.make_image(fill_color="black",back_color="white")
+img.save("ronaldo.png")
