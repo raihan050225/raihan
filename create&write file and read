@@ -3,3 +3,10 @@ file.write("vijay is going final year\n")
 file.write("he is a good kid")
 file.close()
 print("content written to VIJAY.txt successfully")
+#for reading
+with open("PORTUGAL.txt","r")as file:
+    data=file.readlines()
+    for line in data:
+        print(line)
+        wor=line.split()
+        print(wor)
