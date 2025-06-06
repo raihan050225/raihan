@@ -1,0 +1,8 @@
+currency=[500,200,100,50,20,10,5,1]
+amount=int(input("Enter the amount of money you would like to pay: "))
+while amount > 0:
+    for i in currency:
+        if(amount>=i):
+            print(i,end=',')
+            amount-=i
+            break
