@@ -1,0 +1,5 @@
+unique_leng={len(word) for word in ["hi","hello","hey","hi","hello","hey","hi"]}
+print(unique_leng)
+
+evensqr=[x**2 for x in range(1,99) if x % 2 != 0]
+print(evensqr)
