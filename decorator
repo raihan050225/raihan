@@ -1,0 +1,10 @@
+def decfun(originalfunc):
+    def wrapper():
+        print("######################")
+        originalfunc()
+        print("######################")
+    return wrapper
+@decfun
+def add():
+   print("add")
+add()
